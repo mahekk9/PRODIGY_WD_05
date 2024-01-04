@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Kawi:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+         margin: 0;
+        background-image: url('bg.avif');
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+  }
+.background-container {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Adjust the background position as needed */
+    height: 100vh; /* Make sure the container covers the full height of the viewport */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and transparency as needed */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-container {
+    position: absolute;
+    text-align: center;
+}
+.search input {
+    font-size: 50px;
+    text-align: center;
+    padding: 70px;
+    width: 1500px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.search input::placeholder {
+    font-size: 50px; /* Increase the font size for the placeholder text */
+    color: #555; /* Set the color of the placeholder text */
+    text-align: center;
+}
+
+.search button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 3vmin;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 3vh;
+}
+
+.weather h1{
+    font-size: 5.5vmax;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 3.5vmax;
+    font-weight: 400;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2vw;
+    margin-top: 9vh;
+}
+
+.details p{
+    font-size: 2vmax;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 1.75vw;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
